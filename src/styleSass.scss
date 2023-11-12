@@ -1,0 +1,223 @@
+$red:#eb0028;
+$grey:#0000008c;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: .3s ease-in-out;
+}
+
+.zIndex55{z-index: 55;position: relative;}
+.text-left{
+    text-align: left;
+}
+
+.overlay{
+    background-color: #000000cb;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+a{
+    display: block;
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover{
+        color: $red;
+    }
+}
+.justify-center{display: flex;align-items: center;}
+.bg-grey{background-color: #f9f9f9;}
+.navbar{
+    border-bottom: .1rem solid #ccc;
+    box-shadow: inset 0rem 0rem .1rem #ddd;
+    height:12vh;
+    font-size: 1.2rem;
+    a{
+        color:black;
+        &:hover{
+            color: $red;
+        }
+    }
+}
+.color-grey{color:#444}
+.bg-transparent{background-color: transparent;}
+.carousel{
+    height:88vh
+}
+.carousel-control-next-icon , .carousel-control-prev-icon{
+    border:.1rem solid #444;
+    padding:1rem;
+    border-radius: 100%;
+    transition: .7s ease-in-out;
+    &:hover{background-color: $red;}
+}
+
+
+.carousel-caption{
+    right:0%;
+    left:50%;
+    text-shadow: 0rem 0rem .1rem #444;
+h3{font-size: 2.5rem;}
+p{font-size: 3.5rem;font-weight: bolder;}
+}
+.nav-link{
+    font-weight: bolder;
+    &:hover{color:$red ; }
+    }
+    .navbar-expand-lg .navbar-collapse {justify-content: space-around}
+.cu-btn{
+    padding: 1rem 2rem;
+    background-color: #111111ad;
+    border:.2rem solid white;
+    border-radius: 5rem;
+}
+.different{
+    img:hover{transform: scale(.9);}
+}
+ .customerLove{
+    position: relative;
+    background-image: url('./assets/images/phono-slider-3.webp');
+   
+    background-attachment: fixed;
+    .row{max-width:1000px;margin: 0 auto;
+        align-items: center;
+        .accordion-item , .accordion-item:active , .accordion-button{
+            background-color: transparent;
+            color:white
+        }
+        .accordion-item{
+            border:none;
+            border-bottom: .1rem solid white;
+            border-radius: 0;
+        }
+    
+    }
+}
+
+.new-arrivals{
+  
+    .row{max-width: 1300px;margin: 0 auto;
+       .card{
+            border:.2rem solid #f1eeee;
+            padding: 0;
+            position: relative;
+            &:hover{
+                border-color: $red;
+            }
+            &:hover .overLay{
+                transform: translate(0 ,-100%);z-index: 1;
+            }
+        }
+    .cardHead{overflow-y: hidden;height: inherit;margin-bottom: 2rem;}
+    img{padding: 1rem 0rem;}
+    .card-body{position: relative;padding: 0;height: 15vh;}
+       .overLay{
+            position: absolute;
+            padding: .5rem;
+            width: 100%;
+            height: auto;
+            background-color: #5c5a5a;
+            margin-top: 0;
+            z-index: 1;
+            transition: .5s;
+            color: white;
+    &:hover{background-color: $red;}
+
+        }
+        .content{
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #f1eeee;
+            p{color:$red}
+        }
+        .newArrivals .card:hover{border-color: $red;}
+        .newArrivals .card:hover .overLay{transform: translate(0 ,-100%);z-index: 1;}
+        
+       
+    }
+    
+
+}
+
+
+
+
+
+/*********footer ***************/
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 5rem;
+    font-size: bolder;
+    ul{
+        list-style: none;
+    }
+    li{display: inline;}
+}
+
+
+
+
+
+
+/***************************Page1**********/
+.about{
+
+    .container{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/********************Page2****************/
+
+.page2{
+    background-color: black;
+    padding: 1.5rem;
+    transition: 1s ease-in-out;
+    .row{justify-content: center;}
+        .item{
+            text-align: center;
+            border-radius:0 ;
+            background-color: white;
+            padding:1.5rem;
+            margin: 1rem;
+            button{border-radius: 3rem;
+                padding: 1rem 2.5rem;
+                &:hover{background-color: $red;}
+            }
+            
+            span{
+                background-color: black;
+                color: white;
+                border-radius: 15rem;
+                padding: 1rem 1.5rem;
+                &:hover{background-color: $red;}
+            }
+            p{color: $grey;
+                margin: 1rem;
+           }
+        }
+    
+  
+}
+/************************************/
+
+
+.m-nth:nth-of-type(2n){margin-top: 5%;}
+.fluid{width: 100%;}
+
+@media (min-width:992px){
+    .md-hidden{display:none}
+}
+@media (max-width:991px){
+    .xs-hidden{display:none}
+}
